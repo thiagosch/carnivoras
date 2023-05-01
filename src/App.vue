@@ -1,10 +1,10 @@
 <template>
-  <div id="gbl">
+ 
 
     <SiteNavigation />
     <RouterView />
     <!-- <SiteFooter /> -->
-  </div>
+
 </template>
 
 <script setup>

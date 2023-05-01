@@ -5,7 +5,7 @@ import carni2 from '@/assets/fotos/gallery/carni9.jpg';
 
 <template>
   <main class="container bg-primary">
-    <div>
+    <div class="main-container">
       <div class="columns is-gapless section-shadow">
         <p class="column is-four-fifths bg-light">
           ¡Bienvenidos a nuestro mini emprendimiento de plantas carnívoras! Aquí encontrarás una amplia variedad de
@@ -42,6 +42,9 @@ import carni2 from '@/assets/fotos/gallery/carni9.jpg';
 
 
 <style scoped>
+.main-container{
+  margin-top: 1rem;
+}
 .bg-dark {
   color: rgb(238, 238, 238);
   background: rgba(0, 0, 0, 0.57);

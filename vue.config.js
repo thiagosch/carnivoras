@@ -4,5 +4,5 @@ module.exports = defineConfig({
 });
 
 module.exports = {
-    publicPath: "/project name/",
+    publicPath: "/carnivoras/",
 };

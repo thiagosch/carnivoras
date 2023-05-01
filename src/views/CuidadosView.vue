@@ -2,31 +2,35 @@
 <template>
     <main class=" bg-primary container">
         <div id="main-info-container" class="is-flex is-flex-direction-column">
-            <div id="carni2" :style="{ backgroundImage: `url(${images[0]['productImage']})` }"
-                class="info-background-image">
-                <div class="info-background-color"></div>
-                <div class="container-info">
-                    <p class="title-info">
-                        planta 2
+            <router-link to="/info/activas#router-view">
+                <div id="carni2" :style="{ backgroundImage: `url(${images[0]['productImage']})` }"
+                    class="info-background-image">
+                    <div class="info-background-color"></div>
+                    <div class="container-info">
+                        <p class="title-info">
+                            Trampa Activa
 
-                    </p>
-                    <p class="description-info">
-                        algo de la planta
-                    </p>
+                        </p>
+                        <p class="description-info">
+                            Generan movimiento para atrapar a la presa
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div :style="{ backgroundImage: `url(${images[1]['productImage']})` }" class="info-background-image">
-                <div class="info-background-color"></div>
-                <div class="container-info">
-                    <p class="title-info">
-                        planta 2
+            </router-link>
+            <router-link to="/info/pasivas">
+                <div :style="{ backgroundImage: `url(${images[1]['productImage']})` }" class="info-background-image">
+                    <div class="info-background-color"></div>
+                    <div class="container-info">
+                        <p class="title-info">
+                            Trampa Pasiva
 
-                    </p>
-                    <p class="description-info">
-                        algo de la planta
-                    </p>
+                        </p>
+                        <p class="description-info">
+                            No generan movimiento para atrapar a la presa
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </router-link>
         </div>
     </main>
 </template>
@@ -42,12 +46,14 @@
         margin-bottom: 1rem;
         background-repeat: no-repeat;
         background-size: cover;
-        &:hover{
-                .info-background-color{
-                    opacity: .5;
-                
-                }
+
+        &:hover {
+            .info-background-color {
+                opacity: .5;
+
             }
+        }
+
         // background-position: ;
         .info-background-color {
             z-index: 1;
@@ -58,7 +64,7 @@
             bottom: 0;
             right: 0;
             background-image: linear-gradient(to left, #060606a3, #0606066b, transparent, transparent, transparent);
-            
+
         }
     }
 
@@ -80,6 +86,7 @@
         align-items: end;
         justify-items: center;
         justify-content: center;
+
         .title-info {
             font-weight: bold;
             font-size: xx-large;

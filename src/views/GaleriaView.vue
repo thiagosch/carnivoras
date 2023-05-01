@@ -141,7 +141,7 @@ export default {
       desc.innerHTML = this.images[index].prodct
       desc.innerHTML = this.images[index].description
       title.innerHTML = this.images[index].prodct
-      img_source.setAttribute("src", this.images[index].productImage)
+      // img_source.setAttribute("src", this.images[index].productImage)
       const modal = document.getElementById('modal-gallery')
       modal.classList.add('is-active')
 
@@ -241,7 +241,7 @@ figure {
   padding: 0;
   -moz-column-gap: 1.5em;
   -webkit-column-gap: 1.5em;
-  column-gap: 1.5em;
+  column-gap: 4px;
   font-size: .85em;
 }
 
@@ -249,7 +249,7 @@ figure {
   display: inline-block;
 
 
-  margin: 0 0 1.5em;
+  margin: 0 0 3px;
   width: 100%;
   -webkit-transition: 1s ease all;
   box-sizing: border-box;
